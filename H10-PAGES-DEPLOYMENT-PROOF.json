@@ -1,0 +1,57 @@
+{
+  "task": "H10",
+  "status": "accepted",
+  "repository": "https://github.com/IBSOUL/clinicabela-vista",
+  "visibility": "public",
+  "pages_url": "https://ibsoul.github.io/clinicabela-vista/",
+  "pages_settings": {
+    "source": "GitHub Actions",
+    "public": true,
+    "https_enforced": true
+  },
+  "workflow": {
+    "run_id": 44834518806,
+    "url": "https://github.com/IBSOUL/clinicabela-vista/actions/runs/44834518806",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "a65534f455c3c29ca340cec06a510500bcd97542"
+  },
+  "live_http": 200,
+  "live_content": {
+    "clinic_identity": true,
+    "canonical": "https://ibsoul.github.io/clinicabela-vista/",
+    "robots": "index,follow",
+    "json_ld": true,
+    "illustrative_media_label": true
+  },
+  "assets": {
+    "robots_txt": 200,
+    "images": {
+      "dental-studio.jpg": 200,
+      "dental-care.jpg": 200,
+      "dental-detail.jpg": 200,
+      "workspace.jpg": 200,
+      "workspace-detail.jpg": 200
+    }
+  },
+  "browser": {
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "horizontal_overflow": false,
+    "images_loaded": 4,
+    "console_errors": 0,
+    "form_destination": "https://wa.me/5511989754251",
+    "form_open_intercepted": true,
+    "message_sent": false
+  },
+  "notes": [
+    "Static HTML/CSS/JS only; no CRM runtime dependency.",
+    "Images from Unsplash remain labeled illustrative.",
+    "Deployment marker is excluded from the served artifact.",
+    "No deployment was made to the CRM repository."
+  ]
+}

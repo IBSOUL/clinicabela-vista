@@ -1,6 +1,6 @@
 {
   "task": "H10",
-  "status": "repo_created_deploy_in_progress",
+  "status": "accepted",
   "account": "IBSOUL",
   "crm_repository": {
     "name": "IBSOUL/crm-site-factory",
@@ -20,8 +20,13 @@
     "trigger": "workflow_dispatch only",
     "repository_guard": "IBSOUL/clinicabela-vista",
     "approval_gate": "site/APPROVED_FOR_PUBLICATION must exist",
-    "published": false,
-    "repo_created": true
+    "published": true,
+    "repo_created": true,
+    "pages_url": "https://ibsoul.github.io/clinicabela-vista/",
+    "run_id": 44834518806,
+    "run_url": "https://github.com/IBSOUL/clinicabela-vista/actions/runs/44834518806",
+    "head_sha": "a65534f455c3c29ca340cec06a510500bcd97542",
+    "conclusion": "success"
   },
   "release_review_pending": [
     "approve identity and content",
@@ -45,6 +50,19 @@
     "git_diff_check": true,
     "heavy_build_run": false,
     "release_transform_test": true,
-    "images_rights": "Unsplash commercial license checked; images labeled illustrative"
+    "images_rights": "Unsplash commercial license checked; images labeled illustrative",
+    "live_http_200": true,
+    "live_robots": "index,follow",
+    "live_canonical": true,
+    "live_assets": "5 of 5 return HTTP 200; 4 of 4 browser images loaded",
+    "live_responsive_widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "live_form_destination": "https://wa.me/5511989754251",
+    "live_form_sent": false,
+    "live_browser_errors": 0
   }
 }
