@@ -1,0 +1,50 @@
+{
+  "task": "H10",
+  "status": "repo_created_deploy_in_progress",
+  "account": "IBSOUL",
+  "crm_repository": {
+    "name": "IBSOUL/crm-site-factory",
+    "visibility": "private",
+    "role": "admin",
+    "use_as_site_destination": false
+  },
+  "proposed_destination": {
+    "repository": "IBSOUL/clinicabela-vista",
+    "repository_exists": true,
+    "repository_lookup": "Confirmed empty dedicated public repository via gh repo view",
+    "project_pages_url_if_created": "https://ibsoul.github.io/clinicabela-vista/",
+    "visibility": "public"
+  },
+  "deployment": {
+    "workflow": ".github/workflows/pages.yml",
+    "trigger": "workflow_dispatch only",
+    "repository_guard": "IBSOUL/clinicabela-vista",
+    "approval_gate": "site/APPROVED_FOR_PUBLICATION must exist",
+    "published": false,
+    "repo_created": true
+  },
+  "release_review_pending": [
+    "approve identity and content",
+    "replace or explicitly approve illustrative photos",
+    "review contacts and privacy text",
+    "create dedicated destination repository",
+    "confirm Pages eligibility and enable GitHub Actions source"
+  ],
+  "crm_deploy_route": {
+    "endpoint": "POST /api/v1/sites/deploy",
+    "before": "returned published and persisted active DNS/SSL without GitHub calls",
+    "now": "HTTP 501 not_implemented; no publication row written"
+  },
+  "checks": {
+    "static_export_exists": true,
+    "preview_noindex_preserved": true,
+    "production_flags_transformed_in_isolated_copy": true,
+    "approval_gate_blocks_without_marker": true,
+    "existing_output_directory_protected": true,
+    "rustfmt_sites_route": true,
+    "git_diff_check": true,
+    "heavy_build_run": false,
+    "release_transform_test": true,
+    "images_rights": "Unsplash commercial license checked; images labeled illustrative"
+  }
+}
